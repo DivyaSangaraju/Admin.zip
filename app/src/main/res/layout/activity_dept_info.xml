@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/Mainlayout"
+    tools:context=".Admin_Management.Dept_info_Activity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Depatment Information"
+        android:gravity="center"
+        android:layout_margin="20dp"
+        android:textColor="#42619c"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/grd4"
+            android:layout_margin="10dp">
+        <org.angmarch.views.NiceSpinner
+            android:id="@+id/deptNS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp">
+        </org.angmarch.views.NiceSpinner>
+        </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/grd4"
+        android:layout_margin="10dp">
+        <org.angmarch.views.NiceSpinner
+            android:id="@+id/desigNS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp">
+        </org.angmarch.views.NiceSpinner>
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/grd4"
+        android:text="Add Admin"
+        android:textColor="#ffffff"
+        android:layout_margin="50dp"
+        android:onClick="addadmin"/>
+
+</LinearLayout>

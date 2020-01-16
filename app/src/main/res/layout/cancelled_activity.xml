@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Analytics_price.cancelled_reports">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        tools:ignore="UselessParent">
+
+        <Button
+            android:id="@+id/cinBtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            style="?android:attr/buttonBarButtonStyle"
+            android:background="@drawable/whiteborder2"
+            android:hint="@string/start_date"
+            android:textColor="#000"
+            android:paddingStart="20dp"
+            android:paddingEnd="5dp"
+            android:drawableLeft="@drawable/cal24"
+            android:paddingLeft="20dp"
+            android:paddingRight="5dp"
+            android:drawableStart="@drawable/cal24" />
+
+        <Button
+            android:id="@+id/coutBtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginStart="15dp"
+            style="?android:attr/buttonBarButtonStyle"
+            android:background="@drawable/whiteborder2"
+            android:drawableLeft="@drawable/cal24"
+            android:hint="@string/end_date"
+            android:textColor="#000"
+            android:paddingStart="20dp"
+            android:paddingEnd="5dp"
+            android:layout_marginLeft="15dp"
+            android:paddingRight="5dp"
+            android:paddingLeft="20dp"
+            android:drawableStart="@drawable/cal24" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingStart="50dp"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/htlchck"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:text="@string/hotel_chk"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"
+            android:layout_weight="1"/>
+
+        <CheckBox
+            android:id="@+id/drshnchck"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:text="@string/darshan_chk"
+            android:textStyle="bold"
+            android:textColor="#308c09"
+            android:textSize="18sp"
+            android:layout_weight="1"/>
+
+        <CheckBox
+            android:id="@+id/tourchck"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:text="@string/tour_chk"
+            android:textStyle="bold"
+            android:textColor="#e77801"
+            android:textSize="18sp"
+            android:layout_weight="1"/>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/cnamesrecycler">
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

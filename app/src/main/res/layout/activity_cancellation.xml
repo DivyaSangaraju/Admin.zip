@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Analytics.CancellationAct"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="350dp"
+        android:layout_height="55dp"
+        android:text="Cancellations"
+        android:gravity="center"
+        android:padding="10sp"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#FD0328"
+        android:drawablePadding="10dp"
+        android:layout_gravity="center" />
+   <!-- <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:text="Choose Date"
+            android:gravity="center"
+            android:padding="10sp"
+            android:textSize="18sp"
+            android:textColor="#03208b"
+            android:drawablePadding="10dp"
+            android:layout_gravity="center" />-->
+
+        <LinearLayout
+            android:id="@+id/multiplellyt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/FDateLyt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|start"
+                    android:textColor="#919191"
+                    android:text="From"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/fromTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="2dp"
+                    android:drawableEnd="@drawable/calendar"
+                    android:gravity="center|start"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:drawableRight="@drawable/calendar" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="1.5dp"
+                android:layout_height="match_parent"
+                android:background="#c7c7c7" />
+
+            <LinearLayout
+                android:id="@+id/TDateLyt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|start"
+                    android:textColor="#919191"
+                    android:text="@string/to"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/toTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="2dp"
+                    android:drawableEnd="@drawable/calendar"
+                    android:gravity="center|start"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:drawableRight="@drawable/calendar" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+   <!-- </LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp">
+
+        <Button
+            android:id="@+id/hotelCb"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:text="@string/hotel1"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:background="@drawable/box_grey1"
+            />
+        <Button
+            android:id="@+id/darshanCb"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:text="@string/darshan1"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/box_grey1"/>
+        <Button
+            android:id="@+id/tourCb"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:text="@string/tour1"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:background="@drawable/box_grey1"/>
+
+
+    </LinearLayout>
+   <android.support.v7.widget.RecyclerView
+       android:id="@+id/cancleRcv"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_margin="10dp"/>
+
+</LinearLayout>

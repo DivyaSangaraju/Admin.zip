@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="3dp"
+            android:layout_marginTop="15dp"
+            app:cardElevation="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/addNewTv"
+                    android:layout_width="120dp"
+                    android:layout_height="30dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:text="/Add New Ip"
+                    android:gravity="center"
+                    android:layout_gravity="end"
+                    android:background="@drawable/gradient2"/>
+
+
+
+
+                <LinearLayout
+                    android:id="@+id/addNew"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:visibility="gone"
+                    android:orientation="horizontal">
+
+
+                    <EditText
+                        android:id="@+id/addNameET"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:hint="Name"
+                        android:textColorHint="@color/colorPrimaryDark"
+                        android:background="@drawable/boxfill_radius"
+                        android:inputType="text" />
+
+
+                    <EditText
+                        android:id="@+id/addAddrsET"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:layout_marginStart="10dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:hint="Address"
+                        android:textColorHint="@color/colorPrimaryDark"
+                        android:background="@drawable/boxfill_radius"
+                        android:inputType="number"
+                        android:layout_marginLeft="10dp" />
+
+
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/subBtn"
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:text="Submit"
+                    android:visibility="gone"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    style="@style/Widget.AppCompat.Button.Colored"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/cycle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+</ScrollView>

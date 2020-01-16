@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".bookings.edittourvoucher">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/fnameEt"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:inputType="text"
+            android:hint="@string/firstname"/>
+
+        <EditText
+            android:id="@+id/lnameEt"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:inputType="text"
+            android:hint="@string/lastname"/>
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/emailEt"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="textEmailAddress"
+            android:hint="Email"/>
+
+        <EditText
+            android:id="@+id/travelEt"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="text"
+            android:hint="Travel Date"/>
+
+
+        <EditText
+            android:id="@+id/phnEt"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="text"
+            android:hint="Contact No"/>
+
+
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+        <org.angmarch.views.NiceSpinner
+            android:id="@+id/statusspn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp">
+        </org.angmarch.views.NiceSpinner>
+    </RelativeLayout>
+
+    <CheckBox
+        android:id="@+id/cstresend"
+        android:text="SEND MAIL TO CUSTOMER"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/savedata"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="Save"
+        android:onClick="sav"
+        android:layout_gravity="center"/>
+
+
+
+
+
+</LinearLayout>

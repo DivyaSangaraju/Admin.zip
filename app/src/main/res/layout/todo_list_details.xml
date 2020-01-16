@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Marriage Follow Up Details"
+        android:textColor="#F3440D"
+        android:textSize="22sp"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        android:textStyle="italic"
+        android:layout_gravity="top"/>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="10dp"
+        app:cardUseCompatPadding="true"
+        android:layout_margin="3dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:textSize="18sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="Place"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+                <TextView
+                android:id="@+id/mrgplc1TV"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:fontFamily="@font/calibri"
+                android:text="Place of marriage"
+                android:gravity="center"/>
+
+            </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:textSize="18sp"
+            android:textColor="#FF5252"
+            android:text="Contact"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/mrgcntTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:fontFamily="@font/calibri"
+            android:text="Contact No"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:textSize="18sp"
+            android:textColor="#40C4FF"
+            android:text="Marriage Date"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/mrgdt1TV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:fontFamily="@font/calibri"
+            android:text="Contact No"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:textSize="18sp"
+            android:textColor="#143F08"
+            android:text="Description"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/mrgdescTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:fontFamily="@font/calibri"
+            android:text="Contact No"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pllyt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="10dp">
+
+                <Spinner
+
+                    android:id="@+id/spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                </Spinner>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+        <TextView
+            android:id="@+id/newTV"
+            android:text="Add New Conversation"
+            android:gravity="center"
+            android:onClick="newconversation"
+            android:drawableRight="@drawable/newc"
+            android:layout_marginTop="10dp"
+            android:paddingEnd="100dp"
+            android:paddingLeft="10dp"
+            android:textColor="#fff"
+            android:background="@drawable/gradient"
+            android:layout_width="350dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:paddingRight="100dp" />
+
+
+
+        <TextView
+            android:id="@+id/prvsTV"
+            android:text="view Previous Conversation"
+            android:gravity="center"
+            android:background="@drawable/gradient1"
+            android:textColor="#fff"
+            android:drawableLeft="@drawable/previous"
+            android:paddingStart="100dp"
+            android:layout_marginTop="10dp"
+            android:onClick="prvsconversation"
+            android:layout_width="350dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:paddingLeft="100dp" />
+
+        <WebView
+            android:id="@+id/prvsWV"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+        </WebView>
+
+
+        <EditText
+
+            android:id="@+id/addET"
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:gravity="start"
+            android:visibility="gone"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/boxfill_radius1"
+            android:hint="Add here" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/savBtn"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:textColor="#fff"
+                android:onClick="Updatedatas"
+                android:fontFamily="@font/calibri"
+                android:layout_marginStart="10dp"
+                android:text="Save"
+                android:layout_gravity="center"
+                android:background="@color/colorPrimary"
+                android:layout_marginLeft="30dp" />
+
+
+            <TextView
+                android:id="@+id/shrBtn"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:textColor="#fff"
+                android:onClick="shrdata"
+                android:fontFamily="@font/calibri"
+                android:text="Share"
+                android:layout_gravity="center"
+                android:layout_marginStart="150dp"
+                android:background="#088B4C"
+                android:layout_marginLeft="200dp" />
+
+        </LinearLayout>
+
+</LinearLayout>
+</ScrollView>

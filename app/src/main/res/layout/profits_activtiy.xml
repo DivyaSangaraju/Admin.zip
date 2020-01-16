@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Analytics_price.cancelled_reports">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        tools:ignore="UselessParent">
+
+        <Button
+            android:id="@+id/cinBtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            style="?android:attr/buttonBarButtonStyle"
+            android:background="@drawable/whiteborder2"
+            android:hint="@string/start_date"
+            android:textColor="#000"
+            android:paddingStart="20dp"
+            android:paddingEnd="5dp"
+            android:drawableLeft="@drawable/cal24"
+            android:paddingLeft="20dp"
+            android:paddingRight="5dp"
+            android:drawableStart="@drawable/cal24" />
+
+        <Button
+            android:id="@+id/coutBtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginStart="15dp"
+            style="?android:attr/buttonBarButtonStyle"
+            android:background="@drawable/whiteborder2"
+            android:drawableLeft="@drawable/cal24"
+            android:hint="@string/end_date"
+            android:textColor="#000"
+            android:paddingStart="20dp"
+            android:paddingEnd="5dp"
+            android:layout_marginLeft="15dp"
+            android:paddingRight="5dp"
+            android:paddingLeft="20dp"
+            android:drawableStart="@drawable/cal24" />
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/pTV"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textColor="#0840da"/>
+
+
+
+</LinearLayout>

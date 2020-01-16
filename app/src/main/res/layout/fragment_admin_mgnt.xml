@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/mainfly"
+    tools:context=".Admin_Management.Admin_mgnt">
+
+
+   <android.support.v7.widget.RecyclerView
+       android:id="@+id/Adnrecyclerview"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="#d9d7d7">
+
+   </android.support.v7.widget.RecyclerView>
+
+    <Button
+        android:id="@+id/addadminBtn"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="Add New admin"
+        android:layout_gravity="bottom|center"
+        android:background="@drawable/grd3"
+        android:layout_margin="10dp"
+        android:textColor="@color/white"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+
+</FrameLayout>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_margin="10dp"
+    android:scrollbars="vertical"
+    card_view:cardElevation="8dp"
+    card_view:cardUseCompatPadding="false"
+    card_view:cardCornerRadius="10dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="2dp">
+
+
+            <TextView
+                android:id="@+id/AdmnnameTV"
+                android:layout_width="0dp"
+                android:gravity="center|start"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/DeptTV"
+                android:layout_width="0dp"
+                android:gravity="center|start"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="2dp">
+
+
+            <TextView
+                android:id="@+id/DesignationTV"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#448AFF"/>
+
+
+            <TextView
+                android:id="@+id/AmobileTv"
+                android:layout_width="0dp"
+                android:gravity="center|start"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="2dp">
+
+
+            <TextView
+
+                android:text="Added Date"
+                android:layout_width="0dp"
+                android:layout_weight="1.5"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:gravity="start"
+                android:layout_gravity="center"
+                android:textColor="#448AFF"/>
+
+            <TextView
+
+                android:id="@+id/AstatusTv"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="2dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="start"
+                android:textColor="#509212"
+                android:text="Follow up Date"
+               android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/flwupTV"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/addrespTV"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="2"
+                android:text="Edit"
+                android:textColor="#fff"
+                android:background="#FF5252"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:gravity="center"/>
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="5"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:gravity="center"/>
+
+
+            <TextView
+                android:id="@+id/shareTV"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:drawableStart="@drawable/sharew"
+                android:padding="10sp"
+                android:background="#314197"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

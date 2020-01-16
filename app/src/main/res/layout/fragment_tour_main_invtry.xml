@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/Tmainlyt"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".inventory.Tour_Main_Invtry_Act"
+    android:orientation="vertical"
+    android:background="#2B5B83"
+    android:descendantFocusability="beforeDescendants"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:gravity="center|top"
+        android:layout_gravity="center|top"
+        android:src="@drawable/logo1"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="40dp"
+        android:contentDescription="@string/logoimage"/>
+
+    <AutoCompleteTextView
+        android:id="@+id/TautocompTv"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:background="@drawable/whiteborder"
+        android:inputType="text"
+        android:layout_margin="15dp"
+        android:paddingEnd="10dp"
+        android:paddingRight="10dp"
+        android:paddingStart="10dp"
+        android:drawableEnd="@drawable/loc_blue"
+        android:gravity="center|start"
+        android:textSize="20sp"
+        android:hint="@string/tour_name"
+        android:textColorHint="@color/colorPrimary"
+        android:drawableRight="@drawable/loc_blue" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="30dp"
+
+        android:text="Package Name"
+        android:textColor="#ffa000"
+        android:textSize="20sp"/>
+
+    <RelativeLayout
+        android:layout_width="330dp"
+        android:layout_height="65dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border">
+        <Spinner
+            android:id="@+id/packspi"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:prompt="@string/packages"/>
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/Tsearch_button"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:background="#ffa000"
+        android:textColor="@android:color/white"
+        android:text="@string/search"
+        />
+
+</LinearLayout>

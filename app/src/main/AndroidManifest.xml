@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tripnetra.tnadmin">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <application
+        android:name=".utils.G46567"
+        android:allowBackup="true"
+        android:fullBackupContent="true"
+        android:icon="@mipmap/app_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/app_icon_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Analytics.CancellationAct"></activity>
+        <activity android:name=".Analytics.Emp_rangewise_HNames" />
+        <activity android:name=".Analytics_price.PriceHNames" />
+        <activity android:name=".bookings.Hotel_edit_act" />
+        <activity android:name=".bookings.Todo_list_details">
+            <intent-filter>
+                <action android:name="com.tripnetra.tnadmin.bookings.Todo_list_details" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".bookings.Marriage_Add_Rsp">
+            <intent-filter>
+                <action android:name="com.tripnetra.tnadmin.bookings.Marriage_Add_Rsp" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".utils.Change_ip_address" />
+        <activity android:name=".Notifications.Darshan_recycler_first" />
+        <activity android:name=".Notifications.Darshan_Assign_second">
+            <intent-filter>
+                <action android:name="com.tripnetra.tnadmin.Notifications.Darshan_Assign_second" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SplashScreen"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:theme="@style/FullscreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.SEARCH" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="java-lang-programming"
+                    android:scheme="android-app-google-plus-demo" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginMainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DashBoardActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".payments.PaymentVoucherActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".inventory.Hotel_Invtry_Details_Act"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".inventory.Hotel_Manage_Invtry_Act"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".bookings.HotelBookVoucherAct"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".bookings.CarBookVoucherAct"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".bookings.TourBookVoucherAct"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".logs.LogViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".inventory.Car_Invtry_Details_Act"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".inventory.Car_Manage_Invtry_Act"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".logs.Link_InfoActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name=".Analytics.HotelCount" />
+        <activity android:name=".Analytics.CityNames" />
+        <activity android:name=".Analytics.hotel_names" />
+        <activity android:name=".Analytics.room_types" />
+        <activity android:name=".Analytics.ToursCount" />
+        <activity android:name=".Analytics.TourcityNames" />
+        <activity android:name=".Analytics.TourNames" />
+        <activity android:name=".Analytics_price.PriceCount" />
+        <activity android:name=".Analytics.DCount_citynames" />
+        <activity android:name=".Analytics.sightseen_name" />
+        <activity android:name=".Analytics.Darshan_Count" />
+        <activity android:name=".Analytics_price.ComparisonActivity" />
+        <activity android:name=".Analytics_price.Darshan_Range" />
+        <activity android:name=".Analytics_price.Tour_Range" />
+        <activity android:name=".Analytics_price.bargraph" />
+        <activity android:name=".Analytics.Employee_daywise" />
+        <activity android:name=".Analytics.Employee_rangewise" />
+        <activity android:name=".inventory.Tour_Invtry_Details_Act" />
+        <activity android:name=".inventory.Tour_Manage_Invtry_Act" />
+        <activity android:name=".Analytics_price.comp_select" />
+        <activity android:name=".Analytics.Daily_bookings2" />
+        <activity android:name=".Admin_Management.Admin_list" />
+        <activity android:name=".Admin_Management.Dept_info_Activity" />
+        <activity android:name=".Analytics_price.cancelled_reports" />
+        <activity android:name=".bookings.edittourvoucher" />
+        <activity android:name=".Analytics_price.Profits_activtiy" />
+        <activity android:name=".Analytics.Adult_count" />
+        <activity android:name=".Analytics.Adult_count1" />
+        <activity android:name=".Analytics.test" />
+
+        <service
+            android:name=".utils.FBase_Messaging_Service"
+            android:exported="false"
+            android:stopWithTask="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+
+            <!--
+            <intent-filter>
+                <action android:name=".bookings.Book_Voucher_Act" />
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/logo_white" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+    </application>
+
+</manifest>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Notifications.Darshan_Assign_second">
+
+
+
+        <WebView
+            android:id="@+id/itview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </WebView>
+
+
+
+    <Button
+        android:id="@+id/assgnbtn"
+        android:layout_width="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:layout_height="50dp"
+        android:onClick="Assignto"
+        android:text="Assign to"/>
+
+
+    <LinearLayout
+        android:id="@+id/asgnlyt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#2B5B83"
+        android:visibility="gone"
+        android:descendantFocusability="beforeDescendants"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+
+        <AutoCompleteTextView
+            android:id="@+id/autocompTv"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:background="@drawable/whiteborder"
+            android:inputType="text"
+            android:layout_margin="15dp"
+            android:paddingEnd="10dp"
+            android:paddingRight="10dp"
+            android:paddingStart="10dp"
+            android:gravity="center|start"
+            android:textSize="20sp"
+            android:hint="Assign to"
+            android:textColorHint="@color/colorPrimary" />
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/btnsend"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:onClick="sendntfy"
+        android:text="send Notification"/>
+
+
+
+</LinearLayout>

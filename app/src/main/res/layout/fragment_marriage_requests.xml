@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/mainfly"
+    tools:context=".Admin_Management.Admin_mgnt">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:text="Date"
+            android:gravity="center"
+            android:padding="10sp"
+            android:textSize="18sp"
+            android:textColor="#03208b"
+            android:drawablePadding="10dp"
+            android:layout_gravity="center" />
+
+        <Button
+            android:id="@+id/cinBtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            style="?android:attr/buttonBarButtonStyle"
+            android:textColor="#000"
+            android:paddingLeft="20dp"
+            android:paddingRight="5dp"
+            android:drawableStart="@drawable/cal24"
+            android:drawableLeft="@drawable/cal24" />
+
+
+        <TextView
+            android:id="@+id/loadoldTV"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Refresh"
+            android:drawableRight="@drawable/refresh"
+            android:paddingStart="20dp"
+            android:gravity="center|end"
+            android:padding="10sp"
+            android:textSize="18sp"
+            android:textColor="#03208b"
+            android:drawablePadding="10dp"
+            android:layout_gravity="center" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_margin="2dp">
+
+        <CheckBox
+            android:id="@+id/rechkCB"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:text="Recheck"
+            android:fontFamily="@font/calibri"
+            android:gravity="center"
+            android:textColor="#0127FC"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_weight="1"/>
+        <CheckBox
+            android:id="@+id/clsdCB"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:text="Closed"
+            android:fontFamily="@font/calibri"
+            android:gravity="center"
+            android:textColor="#F50A0A"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp" />
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:layout_margin="2dp">
+
+        <CheckBox
+            android:id="@+id/wilngCB"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:text="Willing"
+            android:fontFamily="@font/calibri"
+            android:gravity="center"
+            android:textColor="#B9B90D"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_weight="1"/>
+
+
+        <CheckBox
+            android:id="@+id/confCB"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:text="Confirmed"
+            android:fontFamily="@font/calibri"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="#157044"
+            android:textSize="18sp"
+            android:layout_weight="1"/>
+
+
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/marriagecycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#DBEBF3">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</LinearLayout>

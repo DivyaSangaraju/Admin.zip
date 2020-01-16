@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="8dp"
+    card_view:cardElevation="5dp"
+    android:layout_margin="8dp"
+    android:scrollbars="vertical"
+    card_view:cardUseCompatPadding="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tripTV"
+            android:text="Citynames"
+            android:layout_width="match_parent"
+            android:background="#0b37a7"
+            android:layout_weight="2"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#fff"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+
+            <TextView
+                android:id="@+id/PassTV"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:textSize="22sp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:text="2"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="#199403"/>
+
+
+
+            <TextView
+                android:id="@+id/PackTV"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:textSize="22sp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:paddingStart="50dp"
+                android:text="2"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:textColor="#f10313"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/TrvlTv"
+            android:layout_width="match_parent"
+            android:textSize="16sp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:paddingStart="20dp"
+            android:textStyle="bold"
+            android:layout_height="30dp"
+            android:textColor="#DD1D5E"/>
+    </LinearLayout>
+
+
+
+
+</android.support.v7.widget.CardView>
+

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "141812407880",
+    "firebase_url": "https://adminnotification-f5477.firebaseio.com",
+    "project_id": "adminnotification-f5477",
+    "storage_bucket": "adminnotification-f5477.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:141812407880:android:e3b16e978cd7df39",
+        "android_client_info": {
+          "package_name": "com.tripnetra.tnadmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "141812407880-lvr084otihvn40qg4dngt5dbaci7aegp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tripnetra.tnadmin",
+            "certificate_hash": "1c59d5cf764e0bb3d79ee920756f11756421ec33"
+          }
+        },
+        {
+          "client_id": "141812407880-mnrl2l3jcvhoq9bavm7e22q9ci0lckpj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFkWp2OYOOMOpIr_VBP-ye4OVCC70QJm4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "141812407880-mnrl2l3jcvhoq9bavm7e22q9ci0lckpj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_margin="10dp"
+    android:scrollbars="vertical"
+    card_view:cardElevation="8dp"
+    card_view:cardUseCompatPadding="false"
+    card_view:cardCornerRadius="10dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp">
+
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1.5"
+                android:layout_marginEnd="2dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="2dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:gravity="center|start"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Added By"/>
+
+                <TextView
+                    android:id="@+id/AdmnnameTV"
+                    android:layout_width="match_parent"
+                    android:gravity="center|start"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+            </LinearLayout>
+            <View
+                android:layout_width="1.5dp"
+                android:layout_height="match_parent"
+                android:background="#c7c7c7" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1.5"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:gravity="center|start"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Status"/>
+
+                <TextView
+                    android:id="@+id/DeptTV"
+                    android:layout_width="match_parent"
+                    android:gravity="center|start"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#c7c7c7"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Place of Marriage"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                />
+
+            <TextView
+                android:id="@+id/DesignationTV"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#448AFF"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#c7c7c7"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp">
+
+
+
+
+            <View
+                android:layout_width="1.5dp"
+                android:layout_height="match_parent"
+                android:background="#c7c7c7" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1.5"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:gravity="center|start"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Mobile"/>
+
+                <TextView
+                    android:id="@+id/AmobileTv"
+                    android:layout_width="match_parent"
+                    android:gravity="center|start"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#c7c7c7"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Added Date"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/AstatusTv"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                />
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Follow up Date"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/flwupTV"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                />
+        </LinearLayout>
+
+
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#c7c7c7"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"/>
+
+
+
+
+
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="3"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+
+
+        <TextView
+            android:id="@+id/shareTV"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:text="Share"
+            android:drawableRight="@drawable/share"
+            android:textColor="#314197"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+
+
+
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/addrespTV"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_weight="3"
+                android:textColor="#308B76"
+                android:text="Edit"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:gravity="center"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

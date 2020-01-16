@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ebf9f8"
+    tools:context=".Analytics.CityNames">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/r_rectangle1"
+        android:text="@string/city_wise_bookings"
+        android:layout_gravity="center"
+        android:textColor="#0b05bc"
+        android:textSize="25sp"
+        android:gravity="center"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/CNamesRV"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        tools:listitem="@layout/cnamesrecycler">
+    </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp">
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/chart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"/>
+    </RelativeLayout>
+</LinearLayout>

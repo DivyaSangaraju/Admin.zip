@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context=".Admin_Management.Admin_list">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+               android:id="@+id/admininfoBtn"
+               android:layout_width="160dp"
+               android:layout_gravity="center"
+               android:layout_height="wrap_content"
+               android:text="Admin Info"
+               android:textColor="#ffffff"
+               android:background="@drawable/grd4"
+               android:layout_margin="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="5dp">
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/FnameTIL"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <EditText
+                    android:id="@+id/fnameET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="First Name"
+                    android:inputType="text"/>
+
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/LnameTIL"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp">
+                <EditText
+                    android:id="@+id/LnameET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Last Name"
+                    android:inputType="text"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/emailTIL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+            <EditText
+                android:id="@+id/emailET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:inputType="textEmailAddress"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/passwdTIL"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="#9f9f9f"
+            android:layout_margin="5dp">
+
+            <EditText
+                android:id="@+id/passET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/password"
+                android:inputType="textPassword" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/cpwdTIL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true"
+            android:layout_margin="5dp">
+            <EditText
+                android:id="@+id/cpwdET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="5dp">
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/MnoTIL"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2">
+                <EditText
+                    android:id="@+id/MnoET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Mobile Number"
+                    android:inputType="number"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:background="#0a0a0a"/>
+            <Switch
+                android:layout_gravity="center"
+                android:id="@+id/astatusNS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Status"
+                android:layout_marginLeft="20dp"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/deptinfoBtn"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:text="Department Info"
+            android:layout_gravity="bottom|center"
+            android:textColor="#ffffff"
+            android:layout_margin="10dp"
+            android:onClick="deptinfo"
+            android:background="@drawable/grd4"/>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Analytics.Darshan_Count">
+
+    <TextView
+        android:layout_width="350dp"
+        android:layout_height="55dp"
+        android:text="Employee Day Wise"
+        android:gravity="center"
+        android:padding="10sp"
+        android:textSize="18sp"
+        android:textColor="#9c9a9c"
+        android:drawablePadding="10dp"
+        android:layout_gravity="center" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.8"
+                android:text="Choose Date"
+                android:gravity="center"
+                android:padding="10sp"
+                android:textSize="18sp"
+                android:textColor="#03208b"
+                android:drawablePadding="10dp"
+                android:layout_gravity="center" />
+
+            <Button
+                android:id="@+id/cinBtn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                style="?android:attr/buttonBarButtonStyle"
+                android:textColor="#000"
+                android:paddingLeft="20dp"
+                android:paddingRight="5dp"
+                android:drawableStart="@drawable/cal24" />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="2dp">
+
+            <CheckBox
+                android:id="@+id/htl"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:text="@string/hotel1"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_weight="1"/>
+            <CheckBox
+                android:id="@+id/drshn"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:text="@string/darshan1"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp" />
+            <CheckBox
+                android:id="@+id/tr"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:text="@string/tour1"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_weight="1"/>
+
+
+        </LinearLayout>
+        
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:id="@+id/lnr"
+            android:orientation="vertical">
+            
+        <TextView
+            android:id="@+id/ho"
+            android:textSize="20sp"
+            android:layout_width="150dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_height="50dp" />
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lnrs"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/hos"
+            android:textSize="20sp"
+            android:layout_width="200dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_height="50dp" />
+
+        </LinearLayout>
+        
+        
+        
+
+       <!-- <LinearLayout
+            android:id="@+id/heading1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:visibility="gone"
+            android:background="#9c9a9c"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/h11"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:paddingStart="10dp"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="#fcfcfc"/>
+
+            <TextView
+                android:id="@+id/h22"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="#fcfcfc"/>
+
+            <TextView
+                android:id="@+id/h33"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="#fcfcfc"/>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:visibility="gone"
+            android:background="#9c9a9c"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/h1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="10dp"
+                android:layout_weight="1.5"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="#fcfcfc"/>
+
+            <TextView
+                android:id="@+id/h2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="#fcfcfc"/>
+            <TextView
+                android:id="@+id/h3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="#fcfcfc"/>
+
+
+        </LinearLayout>-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/Recycleemp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:listitem="@layout/cnamesrecycler">
+            </android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:text="@string/daily_booking_reports"
+            android:background="@drawable/r_rectangle1"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#006BB6"
+            android:textSize="28sp"/>
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/cinBtn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                style="?android:attr/buttonBarButtonStyle"
+                android:background="@drawable/whiteborder2"
+                android:hint="Date"
+                android:textColor="#000"
+                android:paddingStart="20dp"
+                android:paddingEnd="5dp"
+                android:drawableLeft="@drawable/cal24"
+                android:paddingLeft="20dp"
+                android:paddingRight="5dp"
+                android:drawableStart="@drawable/cal24" />
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:id="@+id/b1"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:background="@drawable/boxfill_radius"
+                android:layout_weight="1"
+                android:text="@string/hotel_r" />
+
+            <Button
+                android:id="@+id/b2"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="@string/tour_R"
+                android:background="@drawable/boxfill_radius" />
+
+            <Button
+                android:id="@+id/b3"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="@string/darshan_R"
+                android:background="@drawable/boxfill_radius" />
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:id="@+id/llyt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_margin="10dp">
+
+
+            <TextView
+                android:id="@+id/hcTv"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:textAlignment="center"
+                android:background="@drawable/r_rectangle1"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="#006BB6"
+                android:textSize="28sp"/>
+
+            <LinearLayout
+                android:id="@+id/llyt1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:layout_margin="10dp">
+
+
+
+            <TextView
+                android:id="@+id/acTv"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:textAlignment="center"
+                android:background="@drawable/r_rectangle1"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="#006BB6"
+                android:textSize="28sp"/>
+
+            </LinearLayout>
+
+
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
+
+
